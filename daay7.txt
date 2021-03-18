@@ -1,0 +1,87 @@
+package com.handson7;
+
+
+import java.util.ArrayList;
+
+
+import java.util.List;
+
+
+import java.util.Scanner;
+
+
+ 
+
+public class example {
+
+ 
+
+
+       public static void main(String[] args) 
+{
+
+
+             Scanner s= new Scanner(System.in);
+
+
+             System.out.println("enter no of stadium");
+
+     
+         int m=Integer.parseInt(s.nextLine());
+
+   
+          List<String> sc=new ArrayList<>();
+
+  
+           String j;
+
+   
+          System.out.println("enter stadiums ");
+
+
+             for(int i=0;i<m;i++)
+
+  
+           {
+
+ 
+                   j=s.nextLine();
+
+
+                    sc.add(j);
+
+
+             }
+
+
+             int count=0;
+
+   
+          System.out.println("enter venue");
+
+  
+           String v=s.nextLine();
+
+ 
+            for(int i=0;i<m;i++) {
+
+ 
+                   if(sc.get(i).equals(v)) 
+{
+
+                    count++;
+}
+
+
+             }
+
+
+             System.out.println(count);
+
+         
+    }
+
+
+ 
+
+}

@@ -1,0 +1,73 @@
+package com.handson7;
+
+
+import java.util.Scanner;
+
+
+import java.util.Set;
+
+
+import java.util.TreeSet;
+
+
+ 
+
+public class example3 {
+
+
+ 
+
+       public static void main(String[] args) 
+{
+
+    
+         Scanner s= new Scanner(System.in);
+
+
+             System.out.println("enter no of matches");
+
+
+             int m=s.nextInt();
+
+  
+           Set<Integer> sc=new TreeSet<>();
+
+
+             int j;
+
+
+             System.out.println("enter scores ");
+
+ 
+            for(int i=0;i<m;i++)
+
+   
+          {
+
+    
+                j=s.nextInt();
+
+     
+               sc.add(j);
+
+ 
+            }
+
+ 
+            for(int a:sc) 
+{
+
+
+                    System.out.println(a);
+
+    
+       }
+ 
+
+ 
+      }
+
+
+ 
+
+}

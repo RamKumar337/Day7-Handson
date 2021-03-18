@@ -1,0 +1,79 @@
+package com.handson7;
+
+
+import java.util.ArrayList;
+
+
+import java.util.List;
+
+
+import java.util.Scanner;
+
+
+ 
+
+public class Main1 
+{
+
+       
+public static void main(String[] args) 
+{
+
+         
+    Scanner s= new Scanner(System.in);
+
+     
+        System.out.println("enter no of matches");
+
+
+          float m=s.nextInt();
+
+ 
+            List<Integer> sc=new ArrayList<>();
+
+
+             int j;
+
+  
+           System.out.println("enter scores ");
+
+     
+        for(int i=0;i<m;i++)
+
+   
+          {
+
+       
+             j=s.nextInt();
+
+
+                    sc.add(j);
+
+
+             }
+
+   
+          int total=0;
+
+    
+         for(int i=0;i<m;i++) 
+{
+
+
+                    total=total+sc.get(i);
+
+
+             }
+             double avg=total/m;
+      
+      
+ System.out.println(total);
+
+
+             System.out.println(avg);
+
+  
+     }
+
+
+}
